@@ -1,0 +1,18 @@
+﻿  Parsing headers for ShooterEditor
+    Running UnrealHeaderTool "D:\Unreal Projects\Shooter\Shooter.uproject" "D:\Unreal Projects\Shooter\Intermediate\Build\Win64\ShooterEditor\Development\ShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ajsut\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for ShooterEditor in 5.3284585 seconds
+  Building ShooterEditor...
+  Using Visual Studio 2022 14.30.30706 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.20348.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 7 actions with 12 processes...
+    [1/7] Shooter.init.gen.cpp
+    [2/7] ShooterAnimInstance.cpp
+    [3/7] ShooterCharacter.gen.cpp
+    [4/7] ShooterCharacter.cpp
+    [5/7] UE4Editor-Shooter-0026.lib
+       Creating library D:\Unreal Projects\Shooter\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0026.lib and object D:\Unreal Projects\Shooter\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0026.exp
+    [6/7] UE4Editor-Shooter-0026.dll
+       Creating library D:\Unreal Projects\Shooter\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0026.suppressed.lib and object D:\Unreal Projects\Shooter\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0026.suppressed.exp
+    [7/7] ShooterEditor.target
+  Total time in Parallel executor: 7.87 seconds
+  Total execution time: 14.35 seconds
