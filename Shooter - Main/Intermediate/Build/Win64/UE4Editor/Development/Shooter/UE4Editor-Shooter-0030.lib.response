@@ -1,0 +1,19 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Shooter-0030.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\ShooterEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\Shooter.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterAnimInstance.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterCharacter.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterGameModeBase.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\Shooter.init.gen.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterAnimInstance.gen.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterCharacter.gen.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\ShooterGameModeBase.gen.cpp.obj"
+"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\Default.rc2.res"
+/OUT:"D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0030.lib"

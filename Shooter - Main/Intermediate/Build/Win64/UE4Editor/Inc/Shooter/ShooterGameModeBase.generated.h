@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SHOOTER_ShooterGameModeBase_generated_h
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShooterGameModeBase(); \
 	friend struct Z_Construct_UClass_AShooterGameModeBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterGameModeBase)
 
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_INCLASS \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAShooterGameModeBase(); \
 	friend struct Z_Construct_UClass_AShooterGameModeBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterGameModeBase)
 
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShooterGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterGameModeBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShooterGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,28 +60,28 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AShooterGameModeBase)
 
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_12_PROLOG
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_12_PROLOG
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_INCLASS \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_INCLASS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Shooter_Source_Shooter_ShooterGameModeBase_h_15_GENERATED_BODY \
+#define Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	Shooter_Source_Shooter_ShooterGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_SPARSE_DATA \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+	Shooter___Test_Source_Shooter_ShooterGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -89,7 +89,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SHOOTER_API UClass* StaticClass<class AShooterGameModeBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Shooter_Source_Shooter_ShooterGameModeBase_h
+#define CURRENT_FILE_ID Shooter___Test_Source_Shooter_ShooterGameModeBase_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
