@@ -1,14 +1,25 @@
-﻿  Building ShooterEditor...
+﻿  Parsing headers for ShooterEditor
+    Running UnrealHeaderTool "D:\Unreal Projects\Shooter - Test\Shooter.uproject" "D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\ShooterEditor\Development\ShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ajsut\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for ShooterEditor in 6.3036866 seconds
+  Building ShooterEditor...
   Using Visual Studio 2022 14.30.30706 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.20348.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] ShooterCharacter.cpp
-D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(37): warning C5038: data member 'AShooterCharacter::AutomaticFireRate' will be initialized after data member 'AShooterCharacter::bShouldfire'
-D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(38): warning C5038: data member 'AShooterCharacter::bShouldfire' will be initialized after data member 'AShooterCharacter::bFireButtonPressed'
-D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(39): warning C5038: data member 'AShooterCharacter::bFireButtonPressed' will be initialized after data member 'AShooterCharacter::ShootTimeDuration'
-    [2/4] UE4Editor-Shooter-0095.lib
-       Creating library D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0095.lib and object D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0095.exp
-    [3/4] UE4Editor-Shooter-0095.dll
-       Creating library D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0095.suppressed.lib and object D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0095.suppressed.exp
-    [4/4] ShooterEditor.target
-  Total time in Parallel executor: 5.79 seconds
-  Total execution time: 6.80 seconds
+  Building 9 actions with 12 processes...
+    [1/9] Shooter.init.gen.cpp
+    [2/9] Weapon.cpp
+    [3/9] Weapon.gen.cpp
+    [4/9] Item.gen.cpp
+    [5/9] Item.cpp
+D:\Unreal Projects\Shooter - Test\Source\Shooter\Item.cpp(18): warning C5038: data member 'AItem::ZCurveTime' will be initialized after data member 'AItem::ItemInterpStartLocation'
+    [6/9] ShooterCharacter.cpp
+D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(38): warning C5038: data member 'AShooterCharacter::AutomaticFireRate' will be initialized after data member 'AShooterCharacter::bShouldfire'
+D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(39): warning C5038: data member 'AShooterCharacter::bShouldfire' will be initialized after data member 'AShooterCharacter::bFireButtonPressed'
+D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(45): warning C5038: data member 'AShooterCharacter::CameraInterpElevation' will be initialized after data member 'AShooterCharacter::ShootTimeDuration'
+D:\Unreal Projects\Shooter - Test\Source\Shooter\ShooterCharacter.cpp(48): warning C5038: data member 'AShooterCharacter::bFiringBullet' will be initialized after data member 'AShooterCharacter::bFreeAim'
+    [7/9] UE4Editor-Shooter-0141.lib
+       Creating library D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0141.lib and object D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0141.exp
+    [8/9] UE4Editor-Shooter-0141.dll
+       Creating library D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0141.suppressed.lib and object D:\Unreal Projects\Shooter - Test\Intermediate\Build\Win64\UE4Editor\Development\Shooter\UE4Editor-Shooter-0141.suppressed.exp
+    [9/9] ShooterEditor.target
+  Total time in Parallel executor: 9.60 seconds
+  Total execution time: 16.99 seconds
