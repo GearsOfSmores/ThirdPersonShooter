@@ -73,6 +73,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void PlayEquipSound(bool bForcePlaySound = false);
+
+
 private:
 
 	/* Skeletal mesh for the item */
@@ -141,19 +144,52 @@ private:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
 	UCurveFloat* ItemScaleCurve;
 
+	/* Sound played when Item is picked up */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
+	class USoundCue* PickupSound;
+
+	/* Sound played when Item is equipped */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
+	USoundCue* EquipSound;
+
+	/* Background for Item in Inventory */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+		UTexture2D* IconBackground;
+
+	/* Icon for this item in the inventory*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+		UTexture2D* IconItem;
+
+	/* Ammo Icon for this item in the inventory*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+		UTexture2D* AmmoIcon;
+
+	/* Added slot index to item class to know what index we are in... 'Slot in the inventory array' */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+		int32 SlotIndex;
+
+	FTimerHandle PickupSoundTimer;
+	FTimerHandle EquipSoundTimer;
+
+	
+
 public:
 
 	FORCEINLINE UWidgetComponent* GetPickupWidget() const { return PickupWidget; }
-
 	FORCEINLINE USphereComponent* GetAreaSphere() const{ return AreaSphere; }
-
 	FORCEINLINE UBoxComponent* GetCollisionBox() const { return CollisionBox; }
-
 	FORCEINLINE EItemState GetItemState() const { return ItemState; }
-
 	void SetItemState(EItemState State);
-
 	FORCEINLINE USkeletalMeshComponent* GetItemMesh() const { return ItemMesh;  }
+	FORCEINLINE USoundCue* GetPickupSound() const { return PickupSound; }
+	FORCEINLINE void SetPickupSound(USoundCue* Sound) { PickupSound = Sound; }
+	FORCEINLINE USoundCue* GetEquipSound() const { return EquipSound;  }
+	FORCEINLINE void SetEquipSound(USoundCue* Sound) { EquipSound = Sound; }
+	FORCEINLINE int32 GetSlotIndex() const { return SlotIndex; }
+	FORCEINLINE void SetSlotIndex(int32 Index) { SlotIndex = Index;  }
+	FORCEINLINE void SetItemName(FString Name) { ItemName = Name; }
+	FORCEINLINE void SetIconItem(UTexture2D* Icon) { IconItem = Icon; }
+	FORCEINLINE void SetAmmoIcon(UTexture2D* Icon) {AmmoIcon = Icon;}
 
 	/* Called from the AShooterCharacter class */
 	void StartItemCurve(AShooterCharacter* Char);

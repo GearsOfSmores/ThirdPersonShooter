@@ -10,7 +10,7 @@
 
 
 // Sets default values
-AItem::AItem():
+AItem::AItem() :
 	ItemName(FString("Default")),
 	ItemCount(0),
 	ItemState(EItemState::EIS_Pickup),
@@ -21,7 +21,8 @@ AItem::AItem():
 	bInterping(false),
 	ItemInterpX(0.f),
 	ItemInterpY(0.f),
-	InterpInitialYawOffSet(0.f)
+	InterpInitialYawOffSet(0.f),
+	SlotIndex(0)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -143,6 +144,7 @@ void AItem::SetItemProperties(EItemState State)
 			ItemMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 			ItemMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Block);
 			ItemMesh->SetEnableGravity(true);
+			ItemMesh->SetVisibility(true);
 			// Set AreaSphere properties
 			AreaSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 			AreaSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -150,6 +152,23 @@ void AItem::SetItemProperties(EItemState State)
 			CollisionBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 			CollisionBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			break;
+	case EItemState::EIS_PickedUp:
+		PickupWidget->SetVisibility(false);
+		// Set mesh properties
+		ItemMesh->SetSimulatePhysics(false);
+		ItemMesh->SetEnableGravity(false);
+		ItemMesh->SetVisibility(false);
+		ItemMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		ItemMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		// Set AreaSphere properties
+		AreaSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		AreaSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		// Set CollisionBox properties
+		CollisionBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		CollisionBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+
+		break;
 	}
 }
 
@@ -225,6 +244,11 @@ void AItem::Tick(float DeltaTime)
 
 	/* Handles the Item Intepring when in the Equipped Interping state */
 	ItemInterp(DeltaTime);
+
+}
+
+void AItem::PlayEquipSound(bool bForcePlaySound)
+{
 
 }
 
